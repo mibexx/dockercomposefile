@@ -4,26 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3c2f93759ed7fa77936f91cc344d838d",
-    "content-hash": "3a2134e2017e649ba67cdb3301e4cd77",
+    "hash": "f747e642abd9bf3f5ff6452776bb50d7",
+    "content-hash": "423ccba488873af85f45b5725511b1cb",
     "packages": [
         {
-            "name": "mibexx/yamltoobject",
+            "name": "mibexx/collection",
             "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mibexx/yamltoobject.git",
-                "reference": "a87f7d7f8ba20065d9a6b72eab7afcc2be44b428"
+                "url": "https://github.com/mibexx/collection.git",
+                "reference": "bf4fbfbdb51b62c50e8f4f8bdfab07bdea663605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mibexx/yamltoobject/zipball/a87f7d7f8ba20065d9a6b72eab7afcc2be44b428",
-                "reference": "a87f7d7f8ba20065d9a6b72eab7afcc2be44b428",
+                "url": "https://api.github.com/repos/mibexx/collection/zipball/bf4fbfbdb51b62c50e8f4f8bdfab07bdea663605",
+                "reference": "bf4fbfbdb51b62c50e8f4f8bdfab07bdea663605",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6",
-                "symfony/yaml": "~3.2"
+                "php": ">=5.6"
             },
             "require-dev": {
                 "phpunit/phpunit": "5.7.*"
@@ -31,8 +30,8 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "mibexx\\yamltoobject\\": "src",
-                    "mibexx\\yamltoobject\\test\\": "tests"
+                    "mibexx\\collection\\": "src",
+                    "mibexx\\collection\\test\\": "tests"
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
@@ -48,63 +47,8 @@
                     "email": "contact@mibexx.de"
                 }
             ],
-            "description": "Can read and write docker compose files",
-            "time": "2017-04-30 19:26:44"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v3.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/62b4cdb99d52cb1ff253c465eb1532a80cebb621",
-                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "symfony/console": "~2.8|~3.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-03-20 09:45:15"
+            "description": "Can convert yaml to collection objects and back to yaml",
+            "time": "2017-04-30 19:59:47"
         }
     ],
     "packages-dev": [
@@ -1315,6 +1259,61 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03 07:35:21"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/62b4cdb99d52cb1ff253c465eb1532a80cebb621",
+                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "symfony/console": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-03-20 09:45:15"
         },
         {
             "name": "webmozart/assert",
