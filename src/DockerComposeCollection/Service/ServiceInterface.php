@@ -1,6 +1,6 @@
 <?php
 
-namespace mibexx\dockercomposefile\Collection\Service;
+namespace mibexx\dockercomposefile\DockerComposeCollection\Service;
 
 
 use mibexx\collection\Collection\CollectionInterface;

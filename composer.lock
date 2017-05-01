@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f747e642abd9bf3f5ff6452776bb50d7",
-    "content-hash": "423ccba488873af85f45b5725511b1cb",
+    "hash": "95cd53bea59c81841255915dac6895aa",
+    "content-hash": "7694cb82769dfa0b3149fae5e2548139",
     "packages": [
         {
             "name": "mibexx/collection",
-            "version": "v0.1.0",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mibexx/collection.git",
-                "reference": "bf4fbfbdb51b62c50e8f4f8bdfab07bdea663605"
+                "reference": "4fe82df43e4fd0672077c4dc87231f3081ab4f50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mibexx/collection/zipball/bf4fbfbdb51b62c50e8f4f8bdfab07bdea663605",
-                "reference": "bf4fbfbdb51b62c50e8f4f8bdfab07bdea663605",
+                "url": "https://api.github.com/repos/mibexx/collection/zipball/4fe82df43e4fd0672077c4dc87231f3081ab4f50",
+                "reference": "4fe82df43e4fd0672077c4dc87231f3081ab4f50",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "Can convert yaml to collection objects and back to yaml",
-            "time": "2017-04-30 19:59:47"
+            "time": "2017-05-01 13:10:12"
         }
     ],
     "packages-dev": [
